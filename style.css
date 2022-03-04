@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@300;400;500&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    
+}
+.phone{
+    height: 700px;
+    width: 400px;
+    background: grey;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+}
+
+.task-definition{
+    width: 300px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    background: lightgray;
+    border-radius: 30px;
+    margin: 25px;
+}
+.task-definition div{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.note{
+    width: 300px;
+    height: 200px;
+    background: lightcyan;
+    border-radius: 30px;
+    display: flex;
+    border: none;
+    flex-direction: column;
+}
+.note .note-title{ 
+    padding: 20px;
+    background: lightcyan;
+    border-radius: 30px;
+    border: none;
+}
+
+
+#category.work{
+    color: lightblue;
+}
+#category.personal{
+    color: lightcoral;
+}
+#category.personal{
+    color: red;
+}
+#category.spareTime{
+    color: lightseagreen;
+}
+
+.list li.deleted{
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+.list li button{
+    color: grey;
+    height: fit-content;
+}

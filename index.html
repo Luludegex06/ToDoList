@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="phone">
+        <section class="task-definition">
+            <div class="">
+                <label for="category">Category</label>
+                <select name="category" id="category">
+                    <option class ="work" value="work">Work</option>
+                    <option class ="personal" value="personal">Personal</option>
+                    <option class ="important" value="important">Important</option>
+                    <option class ="spareTime" value="spareTime">Spare-time</option>
+                </select>
+            </div>
+            <div class="due-date">
+                <label for="due-date">Due date</label>
+                <input type="date" id="due-date" name="due-date"
+                    value="2022-03-04"
+                    min="2022-03-04" max="2050-12-31">
+            </div>
+        </section>
+        <section class="note">
+            <input type="text" name="note-title" class="note-title" value="Write a note...">
+            <input type="text" class="note" value="">
+        </section>
+        <button class="add" onclick="addNote()">Add note</button>
+        <ul id="list">
+            <li></li>
+        </ul>
+        <button type="button" onclick="deleteAll()">Delete All</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
